@@ -1,0 +1,123 @@
+---
+title: "Leetcode Exercises"
+format: html
+---
+
+
+```{r}
+
+library(tidyverse)
+library(data.table)
+
+
+```
+
+
+
+
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+
+```{r}
+
+solution <- function(arrayOfIntegers, target){
+    ##plan:
+    ##for each integer in the array, add the integer with all the other elements of the array
+    ##after sum, check to see if any numbers in added array equal target,
+    ##if yes, return, if no, continue
+    ##cycle through each element in the array
+    
+    for(i in 1:length(arrayOfIntegers)){
+        iInt <- arrayOfIntegers[i]
+        newArray <- arrayOfIntegers[-i]
+        summedArray <- iInt + newArray
+        if(any(summedArray == target)){
+            firstNum <- summedArray[which(summedArray == target)] %>% names %>% as.numeric
+            secondNum <- i
+            return(c(firstNum,secondNum))
+        }
+    }
+    return(0,0)
+}
+
+solution2 <- function(arrayOfIntegers, target){
+    map <- sapply(X = arrayOfIntegers, FUN = function(x) x + arrayOfIntegers)
+    colnames(map) <- arrayOfIntegers
+    rownames(map) <- arrayOfIntegers
+    answer <- which(map == target,arr.ind = T)[1,]
+    answer
+}
+
+
+```
+
+
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself. 
+
+
+```{r}
+
+solution <- function(array1, array2){
+    array1_2 <- rev(array1) %>% paste0(collapse = "") %>% as.numeric()
+    array2_2 <- rev(array2) %>% paste0(collapse = "") %>% as.numeric()
+
+    new_array <- array1_2 + array2_2
+    new_array <- unlist(strsplit(as.character(new_array), "")) %>% as.numeric
+
+    new_array <- rev(new_array)
+    new_array
+}
+
+```
+
+Given a string s, find the length of the longest substring without repeating characters
+
+```{r}
+
+##label the occurance of each character in the string
+##when 1 turns to 2, signifies the end of a substring
+##relabel occurances w/o substring and break when 1 turns to 2
+
+s <- "abcghbcfqabghabc"
+
+solution <- function(s){
+    s <- strsplit(s,"")[[1]]
+    all_chars <- unique(s)
+    listOfSubstrings <- list()
+    s_2 <- s
+    for(i in 1:(length(s)-1)){
+        substr <- s_2[1:(i)]
+        remainChars <- s_2[i+1:length(s_2)] %>% na.omit
+        if((!(substr %in% remainChars[1])[1])){
+            next
+        }else({
+            listOfSubstrings <- append(listOfSubstrings,list(substr))
+            s_2 <- s_2[(i+1):length(s_2)]
+            }
+            )
+    }
+    listOfSubstrings
+}
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+

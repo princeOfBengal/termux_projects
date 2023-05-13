@@ -1,0 +1,87 @@
+## The Quantity Theory of Money and Inflation
+
+-   Money: The stock of assets that can be readily used to make transactions
+
+-   Money Supply: The quantity of money available in the economy
+
+-   Monetary Policy: control over the money supply
+
+-   Monetary policy is conducted by the central bank
+
+-   Money supply equals currency plus demand deposits
+
+    -   $M = C + D$
+
+-   Reserves (R): The portion of deposits that banks have not lent
+
+-   Fractional Reserve System: Banks hold a fraction of deposits as reserves
+
+    -   $M = \frac{1}{rr} * C$
+        -   *rr* : reserve ratio
+
+-   Monetary Base (B) : C + R
+
+    -   C is controlled by Central Bank
+    -   R is controlled by regulation
+
+-   Reserve-deposit ratio: rr = R / D
+
+    -   depends on regulation and bank policies
+
+-   Currency-deposit ratio: cr = C/D
+
+    -   depends on households' preferences
+
+### Solving for Money Supply
+
+$$
+M = C + D = \frac{C + D}{B} * B = m * B
+$$ *where*:
+
+$$
+m = \frac{C + D}{B}= \frac{C + D}{C + R} = \frac{(C/D) + (D/D)}{(C/D) + (R/D)} = \frac{cr + 1}{cr + rr} 
+$$
+
+![Money_Supply](./Money%20Supply.jpg)
+
+-   The quantity equation has 4 uses:
+
+    -   Velocity, demand for money, long run inflation, aggregate demand
+
+### Money Velocity
+
+-   The rate at which money circulates
+
+$ V = \frac{P * Y}{M} $
+
+-   
+    -   V = Velocity
+
+    -   M = Money in circulation
+
+    -   P = Price of output (GDP Deflator)
+
+    -   Y = Quantity of output (real GDP)
+
+    -   P \* Y = nominal GDP
+
+-   $M^{s}$ is controlled by the central bank, Y is constant in the long run
+
+-   Money market must be in equilibrium, therefore real money supplied must be equal to real money balances demanded
+
+-   $MV = PY$
+
+-   How much real money balances do people want to hold for a given level of real income? $(M/P)^{d} = kY$
+
+#### Derivative Rules:
+
+![der_rules](./Screenshot_20230513_181305_Excel.jpg)
+
+
+![money_supplyM3](./money_supply_syncM3.jpg)
+
+
+
+
+
+

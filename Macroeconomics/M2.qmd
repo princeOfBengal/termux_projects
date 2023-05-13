@@ -1,0 +1,90 @@
+## Loanable Funds Market Model
+
+-   Determines the level of the real interest rate, R, such that aggregate savings equals aggregate investment
+
+-   The total supply of goods and services, Y, equals Aggregate demand (C + I + G)
+
+-   Total demand of funds is aggregate investment by firms
+
+-   Total supply of funds is aggregate savings by households
+
+-   Price of money is the real interest rate, return to savers or cost to investors
+
+-   Demand for loanable funds comes from firms looking to borrow to finance the rental of machinery at cost r
+
+![loanable_funds_model](./M2_files/Loanable_funds_model_diagram.jpg)
+
+## Model Understanding
+
+-   Endogenous vs. exogenous variables
+    -   Endogenous variables are labeled on the axis of the plot
+    -   Exogenous variables are variables outside of the plot
+-   Factors of production
+    -   K: capital; tools, machines and structures used in production
+    -   L: labor; the physical and mental efforts of workers
+-   Production Function: Y = F(K,L)
+    -   Shows how much output (Y) the economy can produce from K units of capital and L units of labor
+    -   Reflects the economy's level of technology
+    -   Exhibits constant returns to scale
+-   Assumptions
+    -   Technology is fixed
+    -   Factors and product markets are perfectly competitive
+        -   Firms and households are price takers
+        -   Zero economic profits
+    -   All prices are fully flexible as we focus on long run
+    -   The economy's supplies of capital and labor are fixed because factor price are flexible
+
+### Price Determination
+
+-   Factor prices are determined by supply and demand in factor markets
+
+-   Supply of each factor is fixed
+
+### Marginal Product of Labor
+
+-   The extra output the firm can produce using an additional unit of labor (holding other inputs fixed)
+
+$MPL = F(K,L + 1) - F(K,L)$
+
+-   When increasing *L* while holding *K* constant, we typically see a decreasing output per unit of added labor
+
+    -   To understand, consider a single machine representing *K*, adding more labor *L* while keeping *K* constant will mean more labor sharing the same amount of *K*
+
+### Demand for Labor
+
+-   Real Wage is nominal wages normalized by price of output
+
+-   If we assume that firms are price takers in the labor market, then real wage is given, and quantity of labor demanded will equal where real wage = Marginal Product of Labor, or the Labor demand curve
+
+### Equlibrium of Real Wage
+
+-   In the wider economy, real wage is now variable (fixed and given for an individual firm)
+
+-   If all participating firms are assumed to be alike, they will have a similar *MPL*
+
+-   In the wider economy, the point at which Labor supply in the economy equals aggregate *MPL* or demand for labor across all firms in the economy determines the equalibrium real wage
+
+### Components of GDP
+
+$Y = C + I + G + NX$
+
+where...
+
+-   *Y* = Value of Total Output
+-   *C* = Consumption
+-   *I* = Investment
+-   *G* = Government Spending
+-   *NX* = Net eXports
+-   *C + I + G + NX* = Aggregate expenditure
+
+#### Consumption
+
+-   Consumption or disposable income is defined as total income minus total taxes: *Y - T*
+
+-   Consumption function: $C = C(Y - T) = mpc(Y-T)$
+
+-   Marginal propensity to consume (MPC) is the change in C when disposable income increases by one dollar
+
+#### Investment
+
+-   The investment function is I = I(r), where r denotes the real interest rate, the nominal interest rate corrected for inflation
